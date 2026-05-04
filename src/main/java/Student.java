@@ -18,6 +18,12 @@ public class Student {
     public Student() {
     }
 
+    // This static method can't access any instance fields, but that's okay.
+    // It only accesses a static field, so we don't need an instace to run this method.
+    public static String getInstitution() {
+        return institution;
+    }
+
     // Method below cannot be static.  Why?  Because it accesses an instance variable and there is no instance...
     // There is no "this" which is how we access the particular instance we're "in" (and there is no spoon)
     public void introduce() {
