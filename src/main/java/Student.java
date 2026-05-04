@@ -1,7 +1,6 @@
 public class Student {
     // These are instance variables.  So called because every instance gets its own copy of them.
     // It wouldn't be very useful if every student object we create is named Ahmad.
-    // (and, if every student's name was Ahmad, I'd screw up the pronunciation of everyone!)
     private String name;
     private int commits;
 
