@@ -1,7 +1,12 @@
 public class Student {
+    // These are instance variables.  So called because every instance gets a copy of them.
+    // It wouldn't be very useful if every student object we create is named Ahmad.
+    // (and, if every student's name was Ahmad, I'd screw up the pronunciation of everyone!)
     private String name;
     private int commits;
 
+    // Static field is the same for all instances.
+    // You can think of it kinda like a class variable.  If you change it, you change it for all instances of the class.
     public static String institution = "YUU";
 
     public Student(String name, int commits) {
@@ -11,7 +16,6 @@ public class Student {
 
     public Student() {
     }
-
 
     // Method below cannot be static.  Why?  Because it accesses an instance variable and there is no instance...
     // There is no "this" (and there is no spoon)
