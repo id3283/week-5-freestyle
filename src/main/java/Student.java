@@ -25,6 +25,15 @@ public class Student {
         System.out.println("Hi, my name is " + this.name);
     }
 
+    // Here's how we can convert **this** object to a String
+    // Because it uses stuff specific to **this** instance, it has to be an instance method.
+    // A static method cannot access instance fields or instance methods.
+    // A static method can only access static fields and static methods.
+    public String studentToString() {
+        String studentString = "Student: Name: " + this.name + " Number of commits: " + this.commits + " Institution: " + Student.institution;
+        return studentString;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
