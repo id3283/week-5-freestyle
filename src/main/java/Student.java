@@ -14,13 +14,32 @@ public class Student {
         this.name = name;
         this.commits = commits;
     }
+    public Student(String name) {
+        this.name = name;
+        this.commits = 0;
+    }
 
     public Student() {
     }
 
+    public String getPipeCsv() {
+        return  this.name + "|" + this.commits;
+    }
+
+    public void addCommits() {
+        this.commits++;
+    }
+
+    public void addCommits(int n) {
+        this.commits += n;
+    }
+
+
+
     // This static method can't access any instance fields, but that's okay.
     // It only accesses a static field, so we don't need an instace to run this method.
     public static String getInstitution() {
+//        return "Joe's Bar and Grill";
         return institution;
     }
 
